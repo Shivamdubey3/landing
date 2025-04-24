@@ -1,0 +1,49 @@
+/* Ensure the container is wide enough for both panels */
+.hero-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+  
+  /* Fix the enquiry card to the viewport */
+  #fixed-enquiry {
+    position: fixed;
+    top: 80px;            /* adjust to sit just below your navbar */
+    right: 1rem;          /* match your container’s right gutter */
+    width: 360px;         /* same as your enquiry card’s max-width */
+    z-index: 100;         /* keep it above other scrolling content */
+  }
+  
+  /* Keep the rest of the layout clear so nothing overlaps */
+  .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Add bottom padding to the hero section so you can scroll past content */
+  .hero {
+    padding-bottom: 100vh; /* enough to allow full page scroll */
+  }
+  @media (max-width: 768px) {
+    .welcome-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        color: #333;
+        text-align: justify;
+        width: 344px !important;
+    }
+    .hero {
+        padding-bottom: 57vh;
+    }
+    .hero {
+        position: relative;
+        height: calc(9vh - 37px);
+    }
+    .hero {
+        padding-bottom: 0vh; /* enough to allow full page scroll */
+      }
+    }  

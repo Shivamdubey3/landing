@@ -1,0 +1,83 @@
+.virtual-tour {
+    position: relative;
+    width: 100%;
+    /* aspect ratio 16:9 */
+    padding-top: 56.25%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .virtual-tour .background-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  
+  .virtual-tour .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 78%; height: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .virtual-tour .content {
+    position: absolute;
+    top: 50%; left: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .virtual-tour .play-btn {
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 50%;
+    width: 64px; height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #006747;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin: left 109px;
+  }
+  
+  .virtual-tour h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .virtual-tour p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .virtual-tour .play-btn {
+      width: 56px; height: 56px;
+      font-size: 1.25rem;
+    }
+    .virtual-tour h2 {
+      font-size: 1.5rem;
+    }
+    .virtual-tour p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .virtual-tour .play-btn {
+      width: 48px; height: 48px;
+      font-size: 1rem;
+    }
+    .virtual-tour h2 {
+      font-size: 1.25rem;
+    }
+    .virtual-tour p {
+      font-size: 0.8rem;
+    }
+  }
+  

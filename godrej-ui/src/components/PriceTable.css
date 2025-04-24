@@ -1,0 +1,111 @@
+.price-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .price-table-wrapper {
+    flex: 2;
+  }
+  
+  .price-title {
+    font-size: 1.5rem;
+    color: #006747;
+    margin-bottom: 1rem;
+  }
+  
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .price-table th,
+  .price-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  
+  .price-table thead th {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .price-table tbody tr.even {
+    background: #f9f9f9;
+  }
+  
+  .breakup-btn {
+    background: #006747;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .costing-card {
+    position: relative;
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 0 0 61.333333%;
+    max-width: 45.333333%;
+}
+  
+  .cost-img {
+    width: 50%;
+    display: block;
+    margin-top: 157px;
+}
+  
+.cost-overlay { 
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background: rgba(0, 103, 71, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}  
+@media (max-width: 768px) {
+    .price-section {
+        display: flex !important;
+        gap: 2rem;
+        padding: 2rem 0;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        /* display: block; */
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-direction: column;
+    }
+    }
+    @media (max-width: 768px) {
+        .costing-card {
+            position: relative;
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 0 0 86.333333%;
+            max-width: 100.333333%;
+        }
+        .cost-img {
+            width: 97%;
+            display: block;
+            margin-top: 6px;
+        }
+        .cost-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 97%;
+            background: rgba(0, 103, 71, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+        }

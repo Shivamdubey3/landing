@@ -1,0 +1,43 @@
+.map-view {
+    padding: 2rem 0;
+    max-width: 967px;
+    margin-left: 18px;
+  }
+  .map-header small { color: #006747; }
+  .map-header h2 { margin: 0.25rem 0 1rem; font-size: 1.5rem; }
+  .map-content {
+    display: flex; gap: 1rem; margin-bottom: 1rem;
+  }
+  .google-map, .static-map {
+    flex: 1; border: 1px solid #ddd; border-radius: 4px;
+    height: 300px; object-fit: contain;
+  }
+  .static-map { object-fit: cover; }
+  
+  /* List below */
+  .map-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 0.5rem 2rem;
+    list-style: none;
+    padding: 0;
+  }
+  .map-list li {
+    font-size: 0.95rem;
+    display: flex; align-items: center;
+  }
+  .map-list li::before {
+    content: '♞';
+    margin-right: 0.5rem;
+    color: #006747;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .map-content { flex-direction: column; }
+    .google-map, .static-map { height: 250px; }
+  }
+  @media (max-width: 480px) {
+    .map-list { grid-template-columns: 1fr; }
+  }
+  

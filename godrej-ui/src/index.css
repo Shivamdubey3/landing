@@ -1,0 +1,510 @@
+/* Reset & base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; color: #333; }
+
+/* Utility classes */
+.container { max-width: 1262px; margin: 0 auto; padding: 0 1rem; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+
+/* Top nav */
+.navbar { background: #fff; padding: 0.5rem 0; box-shadow: 0 1px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 10; }
+
+/* Hero */
+.hero { position: relative; height: calc(100vh - 60px); /* adjust for navbar */ }
+.hero-bg { width:  80%; height: 100%; object-fit: cover; }
+.hero-content { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; padding: 2rem; }
+
+/* Cards */
+.card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1.5rem; }
+.info-card { width: 40%; margin-right: auto; }
+.form-card { width: 30%; margin-left: auto; }
+.button { 
+  background: #006747;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #006747;
+  border: none;
+  padding: 0.09rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 .5vw;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  background-image: -webkit-linear-gradient(left, #444, #1a1a1a);
+  background-image: -moz-linear-gradient(left, #444, #1a1a1a);
+  background-image: -ms-linear-gradient(left, #444, #1a1a1a);
+  background-image: -o-linear-gradient(left, #444, #1a1a1a);
+  background-image: linear-gradient(left, #444, #1a1a1a);
+   }
+.button:hover { opacity: 0.9; }
+.hero {
+  position: relative;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 80%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* .hero-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 0;
+} */
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 1rem;   /* horizontal padding matches .container */
+}
+
+.info-card {
+  flex: 0 0 20%;
+}
+
+.form-card {
+  flex: 0 0 30%;
+}
+
+.card .button {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.hero-content.container {
+  padding: 0;
+}
+.hero-content.container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 20px;
+}
+.hero { overflow: hidden; }
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width:  80%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.card .button {
+  width: auto;
+  min-width: 150px;
+}
+.container {
+  max-width: 1262px;    /* same as navbar */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* Responsive styles */
+.container {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 80%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 1rem; /* match container padding */
+}
+.info-card { flex: 0 0 20%; }
+.form-card { flex: 0 0 30%; }
+.navbar {
+  padding: 0.5rem 0;      /* 8px top & bottom */
+  height: auto;
+}
+.navbar img { height: 32px; }  /* keep logo smaller */
+.navbar ul li { line-height: 1; } /* remove extra line‑spacing */
+.info-card,
+.form-card {
+  margin-top: 0;       /* zero out any built‑in top margin */
+  align-self: flex-start; /* reinforce top‑alignment */
+}
+.container {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hero-content {
+  padding: 2rem 1rem;    /* match container’s horizontal padding */
+}
+/* Navbar tweaks */
+.navbar {
+  padding: 0.5rem 0;         
+  box-shadow: none;          /* optional: remove heavy shadow */
+}
+.navbar img { height: 32px; }
+.navbar ul li {
+  line-height: 1;
+  padding: 0 0.75rem;
+}
+
+/* Container & hero */
+.container {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hero {
+  position: relative;
+  height: calc(100vh - 56px); /* adjust for smaller navbar (56px vs 60px) */
+}
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* Card alignment */
+.info-card,
+.form-card {
+  margin-top: 0;
+  align-self: flex-start;
+}
+.info-card { flex: 0 0 20%; }
+.form-card { flex: 0 0 30%; }
+
+/* Form button spacing */
+.form-card .button {
+  margin-top: 1rem;  /* consistent spacing under inputs */
+}
+.form-card h3 {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;   /* ~18px to match design */
+  font-weight: bold;
+}
+.form-card {
+  flex: 0 0 30%;
+  padding: 24px;          /* equal padding on all sides */
+}
+.form-card input,
+.form-card select {
+  height: 40px;            /* uniform height */
+  font-size: 0.95rem;      /* ~15px for readability */
+}
+.form-card {
+  flex: 0 0 30%;
+  padding: 24px;
+}
+.form-card h3 {
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.form-card input,
+.form-card select {
+  height: 40px;
+  font-size: 0.95rem;
+}
+.form-card .button {
+  margin-top: 16px;
+  height: 48px;
+}
+/* ===== Global & Container ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; color: #333; }
+.container { max-width: 1262px; margin: 0 auto; padding: 0 1rem; }
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #fff;
+  padding: 0.5rem 0; /* 8px top/bottom */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; }
+.navbar img { height: 32px; }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+.navbar li {
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.navbar li svg { margin-right: 0.25rem; }
+.navbar li:hover { color: #006747; }
+.navbar .prereg { background: #006747; color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 4px; }
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  height: calc(100vh - 56px); /* navbar is 56px tall */
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  width: 80%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.info-card {
+  flex: 0 0 20%;
+  padding: 24px;
+}
+.form-card {
+  flex: 0 0 30%;
+  padding: 24px;
+}
+
+/* InfoCard specifics */
+.info-card p:first-child { font-size: 0.75rem; color: #555; }
+.info-card h2 { font-size: 1.5rem; margin: 0.5rem 0; }
+.info-card ul { margin: 1rem 0; padding-left: 1rem; }
+.info-card ul li { margin-bottom: 0.25rem; font-size: 0.9rem; }
+.info-card .benefits { border: 2px dashed #006747; padding: 1rem; border-radius: 4px; margin-bottom: 1rem; }
+.info-card h3 { font-size: 1.25rem; margin: 0.5rem 0; }
+.info-card .button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #006747;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* EnquiryForm specifics */
+.form-card h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.form-card form {
+  display: flex; flex-direction: column; gap: 0.75rem;
+}
+.form-card input,
+.form-card select {
+  height: 40px;
+  padding: 0 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-card .phone-group { display: flex; }
+.form-card .phone-group select { border-right: none; border-radius: 4px 0 0 4px; }
+.form-card .phone-group input { border-radius: 0 4px 4px 0; flex: 1; }
+.form-card .button {
+  margin-top: 1rem;
+  height: 48px;
+  background: #006747;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.enquiry-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: flex
+;
+  flex-direction: column;
+  width: 100%;
+  max-width: 266px;
+  margin-top: -28px;
+  margin-right: -45px;
+  margin-left: 127px;
+  max-height: 1042px;
+  height: 624px;
+}
+
+.enquiry-title {
+  font-size: 1.125rem;   /* 18px */
+  font-weight: 700;
+  margin-bottom: 16px;
+  width: 100%;
+  text-align: left;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;             /* consistent vertical gap */
+  width: 100%;
+}
+
+.enquiry-input,
+.enquiry-select {
+  width: 100%;
+  height: 44px;          /* uniform height */
+  padding: 0 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.phone-group {
+  display: flex;
+  gap: 0;
+}
+
+.enquiry-select {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.enquiry-phone {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.enquiry-button {
+  margin-top: 16px;
+  width: 100%;
+  height: 48px;          /* same height for both buttons */
+  background: #006747;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.enquiry-button:hover {
+  opacity: 0.9;
+}
+
+.instant-callback {
+  margin-top: 12px;      /* a bit of extra space below the form */
+}
+/* Old fixed width */
+.form-card {
+  flex: 0 0 30%;
+  padding: 24px;
+}
+/* New: let it fill remaining space */
+.form-card {
+  flex: 1 1 0%;    /* can grow and shrink, starting at zero basis */
+  padding: 24px;
+  max-width: 400px; /* optional cap so it doesn’t get too wide on huge screens */
+}
+
+@import "swiper/css/bundle";   /* or “swiper/css”, etc. */
+
+/* ===== Global & Container ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+/* …rest of your CSS… */
+/* slick-carousel default styles */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@media (max-width: 768px) {
+  .navbar ul {
+      list-style: none;
+      display: flex;
+      width: 100%;
+      /* display: block; */
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .enquiry-card{
+    display:none;
+  }
+  .info-card {
+    flex: 1 2 27%;
+    padding: 24px;
+}
+.hero-bg{
+  display: none;
+}
+.button{
+  display: none;
+}
+  }
+  /* Make the form stick to the top once scrolled into view */
+.sticky-form {
+  position: sticky;
+  top: 16px;           /* distance from top of viewport */
+  align-self: flex-start;  /* keep it aligned under the hero header */
+}
+
+/* Ensure the hero-content is tall enough to allow scrolling */
+.hero {
+  min-height: 70vh;
+}
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+@media (max-width: 768px) {
+  .welcome-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #333;
+      text-align: justify;
+  }
+  .hero {
+      padding-bottom: 57vh;
+  }
+  .hero {
+      position: relative;
+      height: calc(9vh - 37px);
+  }
+  .hero {
+    padding-bottom:59vh !important;/* enough to allow full page scroll */
+  }
+  }
+  @import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+/* Reset & container */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+/* Optional global heading style */
+h2 { color: #006747; }

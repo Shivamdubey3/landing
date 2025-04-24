@@ -1,0 +1,165 @@
+/* Container & header */
+.amenities {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  .amenities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .amenities-header h2 {
+    font-size: 1.5rem;
+  }
+  .download-btn {
+    background: #006747;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Slider wrapper */
+  .amenities-slider {
+    position: relative;
+    width: 800px;
+  }
+  
+  /* Slide & card */
+  .amenity-card {
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  .amenity-image {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .amenity-image img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .amenity-label {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(0, 103, 71, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 2px;
+  }
+  
+  /* Custom arrows */
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    /* padding: 8px; */
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: #000000;
+    outline: none;
+    background: #000000;
+}
+  .slick-prev { left: -24px; }
+  .slick-next { right: -24px; }
+  
+  /* Responsive tweaks */
+  @media (max-width: 1024px) {
+    .amenity-card { padding: 0 6px; }
+    .slick-prev { left: -20px; }
+    .slick-next { right: -20px; }
+  }
+  @media (max-width: 640px) {
+    .amenities-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .download-btn { width: 100%; }
+    .amenity-card { padding: 0 4px; }
+    .slick-prev { left: -16px; }
+    .slick-next { right: -16px; }
+  }
+  /* Very small phones (≤480px): one full‑width slide, tighter padding */
+@media (max-width: 480px) {
+    .amenities {
+      padding: 1.5rem 0;
+    }
+  
+    .amenities-header h2 {
+      font-size: 1.25rem;
+    }
+  
+    .download-btn {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .amenities-slider {
+      width: 70%; /* let it fill the container */
+    }
+  
+    .amenity-card {
+      padding: 0 2px;
+    }
+  
+    .slick-prev {
+      left: -12px;
+    }
+    .slick-next {
+      right: -12px;
+    }
+  
+    .amenity-label {
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      bottom: 8px;
+      left: 8px;
+    }
+  }
+  
+  /* Small tablets (481px–640px): two slides, moderate padding */
+  @media (min-width: 481px) and (max-width: 640px) {
+    .amenities-header h2 {
+      font-size: 1.35rem;
+    }
+  
+    .download-btn {
+      font-size: 0.92rem;
+    }
+  
+    .amenities-slider {
+      width: 70%;
+    }
+  
+    .amenity-card {
+      padding: 0 4px;
+    }
+  
+    .slick-prev {
+      left: -16px;
+    }
+    .slick-next {
+      right: -16px;
+    }
+  
+    .amenity-label {
+      font-size: 0.8rem;
+      padding: 3px 7px;
+    }
+  }
+  

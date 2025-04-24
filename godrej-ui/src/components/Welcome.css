@@ -1,0 +1,72 @@
+.welcome {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .welcome-title {
+    font-size: 1.75rem;        /* ~28px */
+    color: #006747;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+    width: 942px;
+    text-align: justify;
+  }
+  
+  .welcome-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #006747;
+  }
+  
+  .welcome-button {
+    /* display: inline-flex; */
+    align-items: center;
+    gap: 0.5rem;
+    background: #006747;
+    color: #fff;
+    border: none;
+    padding: 0.35rem 0.5em;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 11px;
+}
+  .welcome-button i {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 768px) {
+    .welcome-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        color: #333;
+        text-align: justify;
+        width: 310px;
+    }
+    .hero {
+        padding-bottom: 57vh;
+    }
+    .hero {
+        position: relative;
+        height: calc(9vh - 37px);
+    }
+    .hero {
+        padding-bottom: 0vh; /* enough to allow full page scroll */
+      }
+    .welcome-title {
+        font-size: 1.12rem;
+        color: #006747;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        width: 373px;
+    }
+    }
